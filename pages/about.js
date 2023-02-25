@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 const about = () => {
   return (
@@ -8,4 +9,13 @@ const about = () => {
   )
 }
 
-export default about
+export default about 
+
+about.getLayout = function PageLayout(page) {
+    return (
+        <>
+        {page}
+        <Footer />
+        </>
+    )
+}
